@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: autoclip
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: ACCESS_KEY
+        sync: false
